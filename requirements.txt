@@ -1,9 +1,9 @@
 streamlit
 numpy
 pandas
-keras-2.14.0
+keras==2.2.5
 load_model
 tensorflow
 h5py
 sklearn
-Pillow
+pillow
