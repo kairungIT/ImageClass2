@@ -3,3 +3,5 @@ numpy
 pandas
 keras
 load_model
+tensorflow
+h5py
