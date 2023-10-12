@@ -6,3 +6,4 @@ load_model
 tensorflow
 h5py
 sklearn
+Pillow
