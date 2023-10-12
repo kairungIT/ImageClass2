@@ -1,7 +1,8 @@
 streamlit
 numpy
 pandas
-keras==2.2.5
+Keras-Applications
+Keras-Preprocessing
 load_model
 tensorflow
 h5py
