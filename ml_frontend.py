@@ -44,7 +44,7 @@ uploaded_file = st.sidebar.file_uploader(
     "Choose an image to classify", type=["jpg", "jpeg", "png"]
 )
 # component for toggling code
-show_code = st.sidebar.checkbox("Show Code")
+#show_code = st.sidebar.checkbox("Show Code")
 
 if uploaded_file:
     bytes_data = uploaded_file.read()
