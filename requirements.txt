@@ -5,4 +5,4 @@ pandas
 streamlit
 Pillow
 h5py
-opencv-python
+opencv-python-headless
