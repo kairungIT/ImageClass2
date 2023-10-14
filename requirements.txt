@@ -1,7 +1,7 @@
-streamlit
-streamlit==0.89.0  # as of my last update, you can use the latest version
-tensorflow==2.6.0  # this will also install Keras which is now part of TensorFlow
-pillow==8.3.2      # for PIL (Python Imaging Library), used by Streamlit for image display
-requests==2.26.0   # for fetching images from URLs
-numpy =1.19.2
-pandas
+numpy==1.21.0
+opencv_contrib_python==4.4.0.46
+tensorflow==2.5.2
+pandas==1.1.4
+streamlit==0.71.0
+Pillow==9.0.0
+h5py==2.10.0
