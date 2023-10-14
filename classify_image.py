@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing.image import load_img
 import numpy as np
 import argparse
-import cv2
+
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -90,6 +90,7 @@ for (i, (imagenetID, label, prob)) in enumerate(P[0]):
 
 # load the image via OpenCV, draw the top prediction on the image,
 # and display the image to our screen
+import cv2
 orig = cv2.imread(args["image"])
 (imagenetID, label, prob) = P[0][0]
 cv2.putText(
