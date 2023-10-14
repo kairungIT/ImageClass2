@@ -52,6 +52,7 @@ if uploaded_file:
     # initialize the input image shape (224x224 pixels) along with
     # the pre-processing function (this might need to be changed
     # based on which model we use to classify our image)
+
     inputShape = (224, 224)
     preprocess = imagenet_utils.preprocess_input
     # if we are using the InceptionV3 or Xception networks, then we
@@ -81,6 +82,7 @@ if uploaded_file:
     image = preprocess(image)
 
     preds = model.predict(image)
+
     predictions = imagenet_utils.decode_predictions(preds)
     imagenetID, label, prob = predictions[0][0]
 
@@ -92,12 +94,7 @@ if uploaded_file:
         )
     )
 
-# Download a single file and make its content available as a string.
-@st.cache(show_spinner=False)
-def get_file_content_as_string(path):
-    url = "https://raw.githubusercontent.com/nithishr/streamlit-ml-demo/main/" + path
-    response = urllib.request.urlopen(url)
-    return response.read().decode("utf-8")
+
 
 
 if show_code:
