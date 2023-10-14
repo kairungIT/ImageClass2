@@ -82,7 +82,7 @@ if uploaded_file:
     image = preprocess(image)
 
     preds = model.predict(image)
-
+    
     predictions = imagenet_utils.decode_predictions(preds)
     imagenetID, label, prob = predictions[0][0]
 
@@ -94,8 +94,3 @@ if uploaded_file:
         )
     )
 
-
-
-
-if show_code:
-    st.code(get_file_content_as_string("ml_frontend.py"))
